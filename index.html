@@ -1,47 +1,93 @@
-<?php
-/*
-Template Name: O5K4R Home Template
-*/
-get_header();?>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O5K4R Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { 
+            font-family: 'Helvetica Neue', Helvetica, Calibri, 'Open Sans', sans-serif; 
+        }
+    </style>
+    <script>
+        (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+        .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+        n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+        (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+        ml('account', '1710664');
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-900">
 
-<main class="o5k4r-main">
-    <section class="hero-section">
-        <div class="container">
-            <img src="https://o5k4rsolutions.github.io/o5k4rsolutionspolska.pl/o5k4rsolutions-content/logo05k4r.png" alt="O5K4R Solutions Logo" class="logo">
-            <h1>O5K4R Solutions</h1>
-            <p class="subtitle">Twój partner w świecie cyfrowym</p>
-            
-            <div class="services-grid">
-                <div class="service-card"><h3>Społeczność RO</h3></div>
-                <div class="service-card"><h3>Społeczność Roblox</h3></div>
-                <div class="service-card"><h3>Programowanie</h3></div>
-                <div class="service-card"><h3>Bazy danych</h3></div>
-                <div class="service-card"><h3>Tworzenie stron</h3></div>
-                <div class="service-card"><h3>Aplikacje</h3></div>
+    <header class="bg-white border-b border-slate-200">
+        <div class="border-b border-slate-100">
+            <div class="container mx-auto px-6 py-1.5 flex justify-end text-[11px] text-slate-500 font-medium">
+                <span>Wsparcie techniczne 24/7</span>
             </div>
         </div>
-    </section>
-</main>
+        
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-8">
+                <div class="flex items-center gap-3">
+                    <img src="https://o5k4rsolutions.github.io/o5k4rsolutionspolska.pl/o5k4rsolutions-content/logo05k4r.png" alt="O5K4R Logo" class="h-10 w-10">
+                    <span class="text-xl font-bold tracking-tight text-slate-900">O5K4R SOLUTIONS</span>
+                </div>
+                <div class="hidden md:flex gap-6 text-sm font-semibold text-slate-700">
+                    <a href="#" class="hover:text-blue-700 transition-colors">Strona główna</a>
+                    <a href="#" class="hover:text-blue-700 transition-colors">Discord</a>
+                    <a href="#" class="hover:text-blue-700 transition-colors">O nas</a>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-<style>
-    .o5k4r-main { padding: 40px 20px; text-align: center; font-family: sans-serif; }
-    .hero-section .logo { max-width: 250px; margin-bottom: 20px; }
-    .hero-section h1 { font-size: 2.5rem; color: #333; }
-    .subtitle { font-size: 1.2rem; color: #666; margin-bottom: 40px; }
-    .services-grid { 
-        display: grid; 
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-        gap: 20px; 
-        max-width: 900px; 
-        margin: 0 auto; 
-    }
-    .service-card { 
-        padding: 20px; 
-        background: #f4f4f4; 
-        border-radius: 8px; 
-        transition: transform 0.3s; 
-    }
-    .service-card:hover { transform: translateY(-5px); background: #e0e0e0; }
-</style>
+     <main class="container mx-auto px-6 py-12">
+        <section class="mb-16">
+            <h1 class="text-4xl font-extrabold text-slate-900 mb-4">Witaj w mojej przestrzeni</h1>
+            <p class="text-lg text-slate-600 max-w-2xl">
+                O5K4R Solutions to projekt, który stworzyłem, aby dzielić się wiedzą i budować społeczność skupioną wokół technologii, programowania i wspólnej pasji do tworzenia cyfrowych rozwiązań.
+            </p>
+        </section>
 
-<?php get_footer();
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- Roblox -->
+            <div class="bg-white border border-slate-200 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                <svg class="w-10 h-10 mb-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2 1l-2 1m2 1l-2 1m2 1l-2 1m-8-9l-2 1m2 1l-2 1m2 1l-2 1m2 1l-2 1m0 0l-2-1m2 1v2.5M12 21a9 9 0 100-18 9 9 0 000 18z"></path></svg>
+                <h3 class="text-xl font-bold mb-2">Społeczność Roblox</h3>
+                <p class="text-slate-600 text-sm">Wsparcie w skryptowaniu, budowaniu oraz wspólne sesje gier w zaufanym gronie.</p>
+            </div>
+            <!-- Coding -->
+            <div class="bg-white border border-slate-200 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                <svg class="w-10 h-10 mb-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                <h3 class="text-xl font-bold mb-2">Programowanie</h3>
+                <p class="text-slate-600 text-sm">Od podstaw do zaawansowanych algorytmów. Rozwijaj się w Python, Lua i innych.</p>
+            </div>
+            <!-- Databases -->
+            <div class="bg-white border border-slate-200 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                <svg class="w-10 h-10 mb-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.58 4 8 4s8-1.79 8-4M4 7c0-2.21 3.58-4 8-4s8 1.79 8 4"></path></svg>
+                <h3 class="text-xl font-bold mb-2">Bazy Danych</h3>
+                <p class="text-slate-600 text-sm">Optymalizacja, projektowanie struktur i bezpieczne przechowywanie danych.</p>
+            </div>
+            <!-- Web -->
+            <div class="bg-white border border-slate-200 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                <svg class="w-10 h-10 mb-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                <h3 class="text-xl font-bold mb-2">Aplikacje i WWW</h3>
+                <p class="text-slate-600 text-sm">Tworzenie stron, web-appów i nowoczesnych interfejsów od zera.</p>
+            </div>
+        </div>
+
+        <section class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm max-w-xl mx-auto text-center">
+            <h2 class="text-2xl font-bold mb-4">Dołącz do newslettera</h2>
+            <p class="text-slate-600 mb-6 text-sm">Bądź na bieżąco z moimi projektami i nowinkami technologicznymi.</p>
+            <!-- MailerLite Embed -->
+            <div class="ml-embedded" data-form="g91gUV"></div>
+        </section>
+    </main>
+
+    <footer class="bg-white py-12 border-t border-slate-200 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 O5K4R Solutions. Tworzone z pasją.</p>
+    </footer>
+
+</body>
+</html>
